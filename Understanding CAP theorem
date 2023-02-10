@@ -1,0 +1,20 @@
+General discussion : 
+
+What are distributed systems?
+
+Well when we design systems to serve usre request we need a server for it, every node has specific power to process the request, and based on the number of request and type of request we can scale out node vertically or horizontally 
+
+vertical scaling means adding more power to the same system lke increasing Ram etc
+Horizontal scaling is when we add more nodes in to serve the request so after addign more node that is horizontal scaling we keep in mind various factors like syncing 
+
+there is is Theorem CAP ( Consistancy, Availability and partition tolerance)
+
+while designing the distrubuted system we consider out usecase that how we wnat to handle the request 
+example : we want out syatem to be more consistant rather than available example : Bank aplication 
+or : we want out application highly available example : Social media application 
+
+we can make combinamtion of both as well as per out need like in bank appliction if 2 ATM machine are patition we will not allow to witdraw money for mother atm untill the partition is resoved 
+of we can make it fully consistant so that there are no services allowed to request till partition is resolved between all the synced machines .
+
+howerver when use case is social media application we need our system to be more available than consistant which means user could see different number of likes or comments at a given point of time untill the partion is resoved but the application is available to
+the user
